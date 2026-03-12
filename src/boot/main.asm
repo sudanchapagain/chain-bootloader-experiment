@@ -6,7 +6,7 @@
 [bits 16]
 
 start:
-    mov ah, 0x02 ;bios func to read disk sector
+    mov ah, 0x02 ; bios function to read disk sector
     mov al, 1 ; read 1 sector
     mov ch, 0 ; cylinder
     mov cl, 2 ; sector 2

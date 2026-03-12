@@ -11,7 +11,7 @@ start:
 print:
      mov bx, 0
 .loop:
-      lodsb ;; load byre from [SI] to AL
+      lodsb ;; load byte from [SI] to AL
       cmp al, 0 ;; null terminate check
       je .done ;; on null, done
       call print_char ;; print char
